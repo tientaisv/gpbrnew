@@ -1,0 +1,53 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: GPBR NEWS
+	Theme URI: thiosa.com
+	Description: Theme for Baria Diocese - Child themes of Goodnews of Momizat - Developed and designed by Truong Van Thi
+	Author: Truong Van Thi - Momizat Theme
+	Author URI: thiosa.com
+	Version: 2.0
+	
+	
+
+License:
+License URI:
+
+General comments (optional).
+-----------------------------------------------------------------------------------------*/
+.thi-news-box .other-articles img{
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 0 15px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) inset;
+	padding:1px;
+}
+.widget-1 .post-img img{
+	border:1px solid #ccc;
+	padding:2px;
+}
+
+li.cat-item.cat-item-1406 {
+    display: none;
+}
+a.hashtag {
+    color: #6ca6f3;
+    font-size: 16px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+#pope-tweet{
+padding: 11px;
+margin-bottom: 2px;
+color: #fff;
+text-align: justify;
+}
+.tweet-content p{
+     margin-bottom: 5px;
+}
+.no-show{
+	display:none;
+}
+.tin-tieu-diem,.wpb_text_column{
+    border-radius: 15px;
+    box-shadow: 0 1px 2px #b7b6b685;
+}
