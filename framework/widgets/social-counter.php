@@ -7,7 +7,7 @@ function mom_social_counter() {
 	}
 
 class mom_social_counter extends WP_Widget {
-	function mom_social_counter() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-social_counter','description' => __('Widget display a count of your social networks followers/fans numbers','theme'));
 /*		$control_ops = array( 'twitter name' => 'momizat', 'count' => 3, 'avatar_size' => '32' );

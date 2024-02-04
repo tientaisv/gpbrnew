@@ -8,7 +8,7 @@ function mom_widget_posts_images() {
 	}
 
 class mom_widget_posts_images extends WP_Widget {
-	function mom_widget_posts_images() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-posts-images','description' => __('Widget display Posts in images order by : Popular, Random, Recent','theme'));
 		parent::__construct('momizatPostsImages',__('Momizat - Posts in Images','theme'),$widget_ops);

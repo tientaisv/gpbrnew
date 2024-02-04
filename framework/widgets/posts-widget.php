@@ -8,7 +8,7 @@ function mom_widget_posts() {
 	}
 
 class mom_widget_posts extends WP_Widget {
-	function mom_widget_posts() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-posts','description' => __('Widget display Posts order by : Popular, Random, Recent','theme'));
 		parent::__construct('momizatPosts',__('Momizat - Posts','theme'),$widget_ops);

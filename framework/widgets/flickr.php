@@ -8,7 +8,7 @@ function mom_flickr() {
 	}
 
 class mom_flickr extends WP_Widget {
-	function mom_flickr() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'flickr','description' => __('Widget display Flickr Feed','framework'));
 		parent::__construct('flickr-photo',__('Momizat - Flickr','framework'),$widget_ops);

@@ -541,8 +541,9 @@ global $do_unique_posts;
 
 	), $atts));
 //$output = get_transient('mnl_'.$display.$category.$tag.$excerpt_length.$count);
-$output == false;
-if ($output == false) {
+$output = '';
+//$output == false;
+if ($output == '') {
 	ob_start();
 global $da;
 global $la;

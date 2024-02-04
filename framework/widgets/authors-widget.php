@@ -8,7 +8,7 @@ function mom_widget_authors() {
 	}
 
 class mom_widget_authors extends WP_Widget {
-	function mom_widget_authors() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-authors','description' => __('Widget display authors','theme'));
 		parent::__construct('momizat-authors_widget',__('Momizat - Authors widget','theme'),$widget_ops);

@@ -8,7 +8,7 @@ function mom_widget_reviews() {
 	}
 
 class mom_widget_reviews extends WP_Widget {
-	function mom_widget_reviews() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-reviews','description' => __('Widget display Posts order by : Top , Random, Recent','theme'));
 		parent::__construct('momizatReviews',__('Momizat - Reviews','theme'),$widget_ops);

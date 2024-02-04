@@ -24,7 +24,7 @@ class mom_widget_social_icons extends WP_Widget {
 		);
 	
 	
-	function mom_widget_social_icons() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-social-icons','description' => __('Widget display social networks icons','theme'));
 		parent::__construct('momizatsocialIcons',__('Momizat - Social Icons','theme'),$widget_ops);

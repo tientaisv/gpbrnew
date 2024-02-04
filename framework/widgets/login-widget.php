@@ -8,7 +8,7 @@ function mom_widget_login() {
 	}
 
 class mom_widget_login extends WP_Widget {
-	function mom_widget_login() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-login','description' => __('Widget display Login form','theme'));
 		parent::__construct('momizatLogin',__('Momizat - Login form','theme'),$widget_ops);

@@ -75,7 +75,7 @@ class mom_googleplus_Widget extends WP_Widget {
 'zu' => 'Zulu',
 	);
 	
-	function mom_googleplus_Widget()
+	function __construct()
 	{
 		$widget_ops = array('classname' => 'mom_googleplus', 'description' => __('Adds a beautiful Google Plus badge widget.','theme'));
 		parent::__construct('momizat-googlebadgebox', __('Momizat - Google+ Badge Box','theme'), $widget_ops);

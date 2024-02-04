@@ -8,7 +8,7 @@ function mom_widget_twitter() {
 	}
 
 class mom_widget_twitter extends WP_Widget {
-	function mom_widget_twitter() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-twitter','description' => __('Widget display Latest tweets','theme'));
 		parent::__construct('momizatTwitter',__('Momizat - Twitter','theme'),$widget_ops);
@@ -191,7 +191,7 @@ function form( $instance ) {
 	    // match name@address
 	    $text = preg_replace("/\b([a-zA-Z][a-zA-Z0-9\_\.\-]*[a-zA-Z]*\@[a-zA-Z][a-zA-Z0-9\_\.\-]*[a-zA-Z]{2,6})\b/i","<a target='_blank' href=\"mailto://$1\" class=\"twitter-link\">$1</a>", $text);
 	        //mach #trendingtopics. Props to Michael Voigt
-	    $text = preg_replace('/([\.|\,|\:|\Á|\À|\>|\{|\(]?)#{1}(\w*)([\.|\,|\:|\!|\?|\>|\}|\)]?)\s/i', "$1<a target='_blank' href=\"http://twitter.com/#search?q=$2\" class=\"twitter-link\">#$2</a>$3 ", $text);
+	    $text = preg_replace('/([\.|\,|\:|\ï¿½|\ï¿½|\>|\{|\(]?)#{1}(\w*)([\.|\,|\:|\!|\?|\>|\}|\)]?)\s/i', "$1<a target='_blank' href=\"http://twitter.com/#search?q=$2\" class=\"twitter-link\">#$2</a>$3 ", $text);
 	    return $text;
 	}
 
@@ -199,7 +199,7 @@ function form( $instance ) {
 	 * Find twitter usernames and link to them
 	 */
 	private function mom_tweets_twitter_users($text) {
-	       $text = preg_replace('/([\.|\,|\:|\Á|\À|\>|\{|\(]?)@{1}(\w*)([\.|\,|\:|\!|\?|\>|\}|\)]?)\s/i', "$1<a target='_blank' href=\"http://twitter.com/$2\" class=\"twitter-user\">@$2</a>$3 ", $text);
+	       $text = preg_replace('/([\.|\,|\:|\ï¿½|\ï¿½|\>|\{|\(]?)@{1}(\w*)([\.|\,|\:|\!|\?|\>|\}|\)]?)\s/i', "$1<a target='_blank' href=\"http://twitter.com/$2\" class=\"twitter-user\">@$2</a>$3 ", $text);
 	       return $text;
 	}
 

@@ -8,7 +8,7 @@ function mom_video_widget() {
 	}
 
 class mom_video_widget extends WP_Widget {
-	function mom_video_widget() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-video','description' => __('Widget display viddeo support Youtube, vimeo and dailymotion','theme'));
 		parent::__construct('momizatVideo',__('Momizat - Video','theme'),$widget_ops);

@@ -8,7 +8,7 @@ function mom_widget_newsletter() {
 	}
 
 class mom_widget_newsletter extends WP_Widget {
-	function mom_widget_newsletter() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-news_letter','description' => __('Widget display NewsLetter Subscribe form it support Mailchimp, feedburner','theme'));
 		parent::__construct('momizatNewsLetter',__('Momizat - NewsLetter','theme'),$widget_ops);

@@ -8,7 +8,7 @@ function mom_widget_posts_slider() {
 	}
 
 class mom_widget_posts_slider extends WP_Widget {
-	function mom_widget_posts_slider() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-posts_slider','description' => __('Widget display Slider for Posts order by : Popular, Random, Recent','theme'));
 		parent::__construct('momizatPostsSlider',__('Momizat - Posts Slider','theme'),$widget_ops);

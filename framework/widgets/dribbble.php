@@ -8,7 +8,7 @@ function mom_dribbble() {
 	}
 
 class mom_dribbble extends WP_Widget {
-	function mom_dribbble() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'mom-dribbble','description' => __('Widget display Dribbble feed','framework'));
 		parent::__construct('mom-dribbble-feed',__('Momizat - Dribbble','framework'),$widget_ops);

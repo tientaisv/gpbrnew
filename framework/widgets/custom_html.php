@@ -8,7 +8,7 @@ function mom_custom_text() {
 	}
 
 class mom_custom_text extends WP_Widget {
-	function mom_custom_text() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'mom_custom_text','description' => __('Arbitrary text or HTML with transparent background Ability','theme'));
 		parent::__construct('mom_custom_text',__('Momizat - Custom Text Widget','theme'),$widget_ops);

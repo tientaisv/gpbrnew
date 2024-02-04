@@ -8,7 +8,7 @@ function mom_fb_likebox_widget() {
 	}
 
 class mom_fb_likebox_widget extends WP_Widget {
-	function mom_fb_likebox_widget() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-facebook');
 

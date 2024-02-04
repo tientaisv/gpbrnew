@@ -8,7 +8,7 @@ function mom_widget_recent_comments() {
 	}
 
 class mom_widget_recent_comments extends WP_Widget {
-	function mom_widget_recent_comments() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-recent_comments','description' => __('Widget display Recent comments','theme'));
 		parent::__construct('momizatRecentComments',__('Momizat - Recent Comments','theme'),$widget_ops);

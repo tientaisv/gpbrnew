@@ -8,7 +8,7 @@ function mom_widget_weather() {
 	}
 
 class mom_widget_weather extends WP_Widget {
-	function mom_widget_weather() {
+	function __construct() {
 			
 		$widget_ops = array('classname' => 'momizat-weather_widget','description' => __('Widget display weather widget','theme'));
 		parent::__construct('momizatWeatherWidget',__('Momizat - Weather','theme'),$widget_ops);
