@@ -24,7 +24,7 @@ class mom_widget_posts extends WP_Widget {
 		$display = $instance['display'];
 		$cats = isset($instance['cats']) ? $instance['cats'] : array();
 
-//$output = get_transient('mom-posts-widget-'.$this->id);
+$output = get_transient('mom-posts-widget-'.$this->id);
 if ($orderby == 'random') {
 	$output = false;
 }
