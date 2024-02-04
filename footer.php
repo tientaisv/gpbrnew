@@ -300,7 +300,8 @@
 	
 	<?php echo mom_option('footer_script'); ?>
         <?php wp_footer(); ?>
-		<script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+	<!--
+		<script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
 		<script type='text/javascript' src='<?php echo get_template_directory_uri() ?>/js/jquery.lazyload.js'></script>
 
 <div class="modal fade" id="nhathomo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="top:67px">
@@ -325,5 +326,6 @@
     </div>
   </div>
 </div>
+				-->
     </body>
 </html>
