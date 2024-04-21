@@ -1,9 +1,22 @@
             <?php
             $lang = '';
             $term = get_queried_object();
-            $image_top = get_field('top_image', $term);
-            $image_ts = get_field('image_tieusu', $term);
-            $ts = get_field('tieu_su', $term);
+            $post_tags = get_the_tags();
+            if(get_field('tieu_su', $term)){
+                $ts = get_field('tieu_su', $term);
+                $image_top = get_field('top_image', $term);
+                $image_ts = get_field('image_tieusu', $term);
+               
+            }else{
+                foreach( $post_tags as $tag ) {
+                    if(get_field('tieu_su', $tag)):
+                    $image_top = get_field('top_image', $tag);
+                    $image_ts = get_field('image_tieusu', $tag);
+                    $ts = get_field('tieu_su', $tag);
+                    endif;
+                    }
+                    
+            }
             if(defined('ICL_LANGUAGE_CODE')) {
                 $lang = ICL_LANGUAGE_CODE;
             }
@@ -120,9 +133,14 @@ echo $main_mobile_menu_query;
                                     background: none !important;
                                 }
                                 .letang .blog-post {
-                                border: none;
                                 background: #FFF;
                                 padding: 20px;
+                                border: 1px solid #9c059c87;
+                                border-radius: 3px;
+                                box-shadow: 0px 1px 5px #333333b8;
+                            }
+                            .letang .post-tile.entry-title{
+                                text-shadow: 1px 1px 0px #33333312;
                             }
                             .letang .blog-post .mom-social-share.ss-horizontal{
                                 margin-bottom: -20px;

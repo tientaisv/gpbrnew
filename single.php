@@ -1,5 +1,6 @@
 <?php
     //Page settings
+    
     $d_breacrumb = get_post_meta(get_the_ID(), 'mom_disbale_breadcrumb', true);
     $PS = get_post_meta(get_the_ID(), 'mom_page_share', true);
     $PC = get_post_meta(get_the_ID(), 'mom_page_comments', true);

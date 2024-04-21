@@ -10,6 +10,7 @@
     $right_sidebar = get_post_meta(get_the_ID(), 'mom_right_sidebar', true);
     $left_sidebars = get_post_meta(get_the_ID(), 'mom_left_sidebar', true);
     $post_tags = get_the_tags();
+   
 ?>
 <?php get_header(); 
 
@@ -27,8 +28,7 @@
                         <div class="category-title">
                                 <?php mom_breadcrumb(); ?>
                         </div>
-                          <a href="/tag/chapheronguyenvananh" title="Trở về trang chủ"><img style=" margin-bottom: 15px;width:100%" class="hidden-xs hidden-sm" src="https://www.giaophanbaria.org/wp-content/uploads/2022/03/0.LmPheroNguyenVanAnh-cover_1_l.jpg" /></a> 
-              
+                      
                         <?php } ?>
                         <?php if ($custom_page) { ?>
                                 <?php mom_single_post_content(); ?>
@@ -45,12 +45,13 @@
                                 $image_top = get_field('top_image', $tag);
                                 $image_ts = get_field('image_tieusu', $tag);
                                 $ts = get_field('tieu_su', $tag);
-                               
                                 if($image_top):  $tag_current = $tag->term_id; ?>
                                     <a href="<?php echo esc_url(get_term_link($tag->term_id)); ?>" title="Trở về trang chủ"> <img style=" margin-bottom: 15px;width:100%" class="hidden-xs hidden-sm" src="<?= $image_top ?>" /></a>
                                         <p></p>
-                                    <?php endif;	
+                                    <?php endif;
+                                	
                                 }
+                                
                         ?>
                 <p></p>
                 
